@@ -48,6 +48,7 @@ exports.usD =  async (req,res) => {
             '2': 'buyAirtime'
         }
     });
+    // menu.()
     menu.run(req.body, ussdResult => {
         res.status(200).send(ussdResult);
     });
