@@ -13,7 +13,7 @@ exports.sendSms = async (message,tel) =>{
             message:message,
             from:'3050'
         }
-        console.log(options)
+        // console.log(options)
         await sms.send(options)
             .then( response => {
                 console.log(response);
